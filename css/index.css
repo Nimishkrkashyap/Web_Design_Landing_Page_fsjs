@@ -28,6 +28,7 @@ nav img{
 }
 .nav-item{
     color: #3e4794;
+    font-size: 1.4rem;
 }
 .signin-btn{
     height: fit-content;
@@ -51,7 +52,9 @@ nav img{
     color: #3e4794;
     margin: 5rem 0;
     font-weight: 500;
-    width: 50%;
+    width: 45%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 .learn-more-btn{
     background: linear-gradient(to right, #3530cc80, #bc0ead80);
@@ -85,8 +88,7 @@ nav img{
 }
 .imgs-div img:nth-child(2){
     position: absolute;
-    bottom: 24vh;
-    left: -0.5rem;
+    bottom: 26vh;
 }
 .imgs-div img:nth-child(3){
     height: 85vh;
@@ -95,9 +97,15 @@ nav img{
     html{
         font-size: 55%;
     }
+    .left-section h4{
+        width: 80%;
+    }
+    .imgs-div img:nth-child(3){
+        height: 75vh;
+    }
   }
   
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     html{
         font-size: 45%;
     }
@@ -108,5 +116,64 @@ nav img{
     }
     .nav-item{
         display: none;
+    }
+    .left-section h4{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+    .imgs-div{
+        width: 100%;
+        
+    }
+    .imgs-div::before{
+        height: 90vh;
+        width: 95%;
+        top: -33vh;
+    }
+    .imgs-div img:nth-child(2){
+        bottom: 29vh;
+        left: 2rem;
+    }
+    .imgs-div img:nth-child(3){
+        height: 80vh;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .left-section h4{
+        width: 85%;
+    }
+    .imgs-div::before{
+        height: 95vh;
+        width: 100%;
+    }
+    .imgs-div img:nth-child(3){
+        height: 70vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .left-section h4{
+        width: 90%;
+    }
+    .imgs-div{
+        margin-bottom: -10rem;
+    }
+    .imgs-div::before{
+        height: 75vh;
+        width: 110%;
+    }
+    .imgs-div img:nth-child(1){
+        bottom: 20vh;
+        left: -10vw;
+    }
+    .imgs-div img:nth-child(2){
+        bottom: 36vh;
+        left: 1rem;
+    }
+    .imgs-div img:nth-child(3){
+        height: 50vh;
     }
 }
