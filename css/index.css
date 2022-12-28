@@ -144,6 +144,7 @@ nav img{
 @media (max-width: 700px) {
     .left-section h4{
         width: 85%;
+        margin: 4rem 0;
     }
     .imgs-div::before{
         height: 95vh;
